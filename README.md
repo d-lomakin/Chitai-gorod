@@ -47,5 +47,6 @@ allure serve allure_results
 Эта команда запустит сервер, который откроет отчет Allure в вашем браузере. Убедитесь, что утилита Allure установлена на вашем компьютере.
 
 # Полезные ссылки 
-https://www.chitai-gorod.ru/
-https://www.notion.so/7ead7573aef948a1bb22dfebab073228
+- https://www.chitai-gorod.ru/
+
+- https://www.notion.so/7ead7573aef948a1bb22dfebab073228
