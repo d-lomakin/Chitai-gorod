@@ -6,14 +6,14 @@
 
 ## Структура проекта
 
-- **config/**
+- **config**
   - `config.py`: содержит настройки окружения, такие как базовый URL для API и UI, токен авторизации, заголовки и другие данные для тестов.
   
-- **tests/**
+- **tests/*
   - `test_api.py`: содержит API тесты для проверки различных запросов и ответов.
   - `test_ui.py`: содержит UI тесты, используя Selenium для тестирования интерфейса.
 
-- **pages/**
+- **pages**
   - `main_page.py`: содержит класс MainPage, который предоставляет методы для автоматизации взаимодействия с главной страницей сайта "Читай-город".
 
 - **allure_results**: эта папка предназначена для хранения отчетов Allure, и при локальном запуске тестов результаты будут автоматически сохранены в allure_results.
@@ -35,15 +35,17 @@ pip install -r requirements.txt
 Запустите тесты с генерацией результатов для отчета, используя команду:
 
 pytest --alluredir=allure_results - запуск сразу всех тестов;
+
 pytest tests/test_api.py --alluredir=allure-results - запуск Api тестов;
+
 pytest tests/test_ui.py --alluredir=allure-results - запуск Ui тестов.
 
 ## Для просмотра сформированного отчета Allure выполните следующую команду:
 
 allure serve allure_results
+
 Эта команда запустит сервер, который откроет отчет Allure в вашем браузере. Убедитесь, что утилита Allure установлена на вашем компьютере.
 
 # Полезные ссылки 
 https://www.chitai-gorod.ru/
-https://github.com/d-lomakin/Chitai-gorod
 https://www.notion.so/7ead7573aef948a1bb22dfebab073228
